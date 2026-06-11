@@ -1,6 +1,8 @@
 # What is the Python "if" statement?
 # What are conditional tests? - Expressions that can be evaluated as True or False.
 # In Python, why does for loop and if statements require colon in their sytax?
+# What are the different kinds of if statements in Python?
+# In Python context, what is a call?
 
 cars = ['audi', 'bmw', 'subaru', 'toyota']
 
@@ -56,3 +58,72 @@ print('sugar' not in requested_toppings) #check value not in a list
 
 # Boolean Values: (1) True (2) False
 
+
+# If statement example
+
+age = 19 
+if age >= 18:
+    print("You are old enough to vote!")     
+    print("Have you registered to vote yet?") 
+
+# If-else statement example
+
+age = 17
+if age >= 18:
+    print("You are old enough to vote!")     
+    print("Have you registered to vote yet?") 
+else:
+    print("Sorry, you are too young to vote")
+    print("Please register to vote as soon as you turn 18!")
+
+
+# If-elif-else statement chain example
+
+age = 12
+if age < 4:
+    print("Your admission cost is $0.")
+elif age < 18:
+    print("Your admission cost is $25.")
+else:
+    print("Your admission cost is $40.")
+
+# Multiple elif blocks:
+
+age = 12
+if age < 4:
+    price = 0
+elif age < 18:
+    price = 25
+elif age < 65:
+    price = 40
+else:
+    price = 20
+
+print(f"Your admission cost is ${price}.")
+
+# You can omit the else Block
+
+age = 12
+if age < 4:
+    price = 0
+elif age < 18:
+    price = 25
+elif age < 65:
+    price = 40
+elif age >= 65: #Much more clearer than the previous
+    price = 20
+
+print(f"Your admission cost is ${price}.")
+
+# Testing Multiple Conditions
+
+requested_toppings = ['mushrooms', 'extra cheese']
+
+if 'mushrooms' in requested_toppings:
+    print("Adding mushrooms.")
+if 'pepperoni' in requested_toppings:
+    print("Adding pepperoni.")
+if 'extra cheese' in requested_toppings:
+    print("Adding extra cheese.") 
+
+print("\nFinished making your pizza!")
