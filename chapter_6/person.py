@@ -6,8 +6,11 @@ Benny = {'first_name': 'Benson',
     'city': 'Los Angeles'
     }
 
-print("Benny's Information:\n")
+print("Benny's Information:")
+print(f"\tName: {Benny['first_name'].title()} {Benny['last_name'].title()}")
+print(f"\tAge: {Benny['age']}")
+print(f"\tLocation: {Benny['city'].title()}")
 
-for info in Benny:
-    print(f"{info.title()}: {Benny[info]} ")
+
+
 

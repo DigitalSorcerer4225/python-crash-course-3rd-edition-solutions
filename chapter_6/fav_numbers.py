@@ -5,9 +5,5 @@ favorite_numbers = {'dante': 777, 'mica': 62,
     'alice': 14, 'benson': 99, 'pinky': 3
     }
 
-for person in favorite_numbers:
-    print(f"{person.title()}'s favorite number is: {favorite_numbers[person]}")
-
-
-
-
+for person, number in favorite_numbers.items():
+    print(f"{person.title()}'s favorite number is: {number}.")
