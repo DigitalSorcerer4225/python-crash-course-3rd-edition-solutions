@@ -17,7 +17,11 @@ while True:
     if album_title == 'q':
         break
 
-    album = make_album(artist_name, album_title)
+    quantity_songs = input ("Number of songs in the album: ")
+    if quantity_songs == 'q':
+        break
+
+    album = make_album(artist_name, album_title, quantity_songs)
     print(album)
     
 
